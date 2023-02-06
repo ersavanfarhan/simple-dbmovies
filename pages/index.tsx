@@ -1,32 +1,56 @@
-import Moviescard from "@/components/moviescard";
+import Categories from "@/components/categories";
+import HeaderHome from "@/components/header";
+import PopuplarCard from "@/components/popular_card";
+import TrendingCard from "@/components/trending_card";
+import TvCard from "@/components/tv_card";
 
 export default function Home() {
   return (
     <div>
       <section id="header" className="w-full relative">
-        <img src="../fury-movie.jpg" className="w-full" />
-        <div id="banner-text" className="absolute grid xs:w-full w-1/2 xs:p-2 sm:p-2 p-5 top-0">
-          <label className="xs:text-xl sm:text-4xl md:text-5xl text-6xl text-white font-bold drop-shadow-lg">
-            WATCH YOUR FAVORITE MOVIES ANYWHERE
-          </label>
-          <div id="browse-btn">
-            <button className="xs:mt-2 mt-5 xs:p-2 px-5 py-2 text-xs bg-orange-400 text-white font-bold rounded-3xl">
-              BROWSE MOVIES
-            </button>
-          </div>
+        <HeaderHome />
+      </section>
+
+      <section
+        id="categories"
+        className="grid gap-5 xs:p-3 sm:p-3 md:p-5 px-28 py-3 bg-gray-900"
+      >
+        <Categories />
+      </section>
+
+      <section
+        id="trendings"
+        className="grid gap-5 xs:p-3 sm:p-3 md:p-5 px-28 pb-10 bg-gray-900"
+      >
+        <label className="font-bold xs:text-xl sm:text-4xl md:text-5xl text-6xl text-white">
+          TRENDINGS
+        </label>
+        <div className="">
+          <TrendingCard />
         </div>
       </section>
 
-      <section id="trendings" className="xs:p-3 sm:p-3 md:p-5 px-28 py-10">
-        <label className="font-bold xs:text-xl sm:text-4xl md:text-5xl text-6xl">TRENDINGS</label>
-        <div className="grid xs:grid-cols-2 sm:grid-cols-3 grid-cols-5 gap-5 mt-3">
-          <Moviescard />
-          <Moviescard />
-          <Moviescard />
-          <Moviescard />
-          <Moviescard />
-          <Moviescard />
-          <Moviescard />
+      <section
+        id="popular"
+        className="grid gap-5 xs:p-3 sm:p-3 md:p-5 px-28 py-10 bg-gray-800"
+      >
+        <label className="font-bold xs:text-xl sm:text-4xl md:text-5xl text-6xl text-white">
+          MOST POPULAR
+        </label>
+        <div className="">
+          <PopuplarCard />
+        </div>
+      </section>
+
+      <section
+        id="television"
+        className="grid gap-5 xs:p-3 sm:p-3 md:p-5 px-28 py-10 bg-gray-900"
+      >
+        <label className="font-bold xs:text-xl sm:text-4xl md:text-5xl text-6xl text-white">
+          TV TOP RATED
+        </label>
+        <div className="">
+          <TvCard />
         </div>
       </section>
     </div>
