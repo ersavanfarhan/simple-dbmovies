@@ -33,17 +33,21 @@ export default function TrendingCard() {
             <Link
               href={"/movies/" + trending.id}
               key={index}
-              className="mb-3 bg-gray-700 rounded-2xl text-white hover:scale-110 hover:transition"
+              className="bg-gray-700 rounded-2xl text-white lg:hover:scale-110 xl:hover:scale-110 hover:transition"
             >
               <img
                 src={IMAGE_TMDB_URL + trending.poster_path}
                 className="w-full aspect-[3/4.5] rounded-t-2xl"
               />
               <div id="poster_text" className="grid mt-2 px-3 pb-2">
-                <label className="font-bold">{trending.title}</label>
+                <label className="xs:text-xs font-bold">{trending.title}</label>
                 <div id="rate" className="flex items-center gap-1">
-                  <div><span className="material-symbols-outlined">grade</span></div>
-                  <div><label className="text-sm">{trending.vote_average}</label></div>
+                  <div>
+                    <span className="material-symbols-outlined">grade</span>
+                  </div>
+                  <div>
+                    <label className="text-sm">{trending.vote_average}</label>
+                  </div>
                 </div>
               </div>
             </Link>

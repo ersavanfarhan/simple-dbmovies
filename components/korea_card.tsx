@@ -19,14 +19,14 @@ export default function KoreaCard() {
           <Link
             href={"/movies/" + korea.id}
             key={index}
-            className="mb-3 bg-black rounded-2xl text-white hover:scale-110 hover:transition"
+            className="bg-black rounded-2xl text-white lg:hover:scale-110 xl:hover:scale-110 hover:transition"
           >
             <img
               src={IMAGE_TMDB_URL + korea.poster_path}
               className="rounded-t-2xl"
             />
             <div id="poster_text" className="grid mt-2 px-3 pb-2">
-              <label className="text-md font-bold">{korea.title}</label>
+              <label className="xs:text-xs text-sm font-bold">{korea.title}</label>
               <div id="rate" className="flex items-center gap-1">
                 <div>
                   <span className="material-symbols-outlined">grade</span>

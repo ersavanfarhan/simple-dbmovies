@@ -30,14 +30,14 @@ export default function GenreCard() {
             <Link
               href={"/movies/" + genrecard.id}
               key={index}
-              className="mb-3 bg-gray-700 rounded-2xl text-white hover:scale-110 hover:transition"
+              className="bg-gray-700 rounded-2xl text-white lg:hover:scale-110 xl:hover:scale-110 hover:transition"
             >
               <img
                 src={IMAGE_TMDB_URL + genrecard.poster_path}
                 className="w-full aspect-[3/4.5] rounded-t-2xl"
               />
               <div id="poster_text" className="grid mt-2 px-3 pb-2">
-                <label className="font-bold">{genrecard.title}</label>
+                <label className="xs:text-xs text-sm font-bold">{genrecard.title}</label>
                 <div id="rate" className="flex items-center gap-1">
                   <div><span className="material-symbols-outlined">grade</span></div>
                   <div><label className="text-sm">{genrecard.vote_average}</label></div>

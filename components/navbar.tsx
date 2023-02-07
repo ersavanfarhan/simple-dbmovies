@@ -13,9 +13,9 @@ export default function Navbar() {
   return (
     <div className="flex items-center xs:p-3 sm:p-3 px-10 py-5 justify-between bg-black">
       <section id="logo">
-        <div className="container">
+        <Link href="/" className="container">
           <img src="../moviedb-logo.png" className="xs:w-12 sm:w-24 w-28" />
-        </div>
+        </Link>
       </section>
 
       <section id="dropdown_hamburger" className="text-white xs:block hidden" 
@@ -26,7 +26,7 @@ export default function Navbar() {
 
           <div
             id="hamburger_content"
-            className="absolute right-1 bg-gray-600 rounded-xl z-10 hidden"
+            className="absolute right-1 bg-gray-600 rounded-xl z-30 hidden"
           >
             <Link
               href="/"

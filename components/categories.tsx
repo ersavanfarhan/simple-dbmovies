@@ -120,9 +120,9 @@ export default function Categories() {
         </div>
       </section>
 
-      <section id="search_btn" className="p-2 text-white bg-orange-400 rounded-3xl">
-        <Link href="/result">
-          <span className="material-symbols-outlined flex items-center">search</span>
+      <section id="search_btn" className="xs:p-1 p-2 text-white bg-orange-400 rounded-3xl">
+        <Link href="/result" className="flex items-center">
+          <span className="material-symbols-outlined">search</span>
         </Link>
       </section>
     </div>

@@ -20,7 +20,7 @@ export default function Home() {
 
       <section
         id="trendings"
-        className="grid gap-5 xs:p-3 sm:p-3 md:p-5 px-28 pb-10 bg-gray-900"
+        className="grid xs:gap-1 gap-5 xs:p-3 sm:p-3 md:p-5 px-28 pb-10 bg-gray-900"
       >
         <label className="font-bold xs:text-xl sm:text-4xl md:text-5xl text-6xl text-white">
           TRENDINGS
@@ -32,7 +32,7 @@ export default function Home() {
 
       <section
         id="popular"
-        className="grid gap-5 xs:p-3 sm:p-3 md:p-5 px-28 py-10 bg-gray-800"
+        className="grid xs:gap-1 gap-5 xs:p-3 sm:p-3 md:p-5 px-28 py-10 bg-gray-800"
       >
         <label className="font-bold xs:text-xl sm:text-4xl md:text-5xl text-6xl text-white">
           MOST POPULAR
@@ -44,7 +44,7 @@ export default function Home() {
 
       <section
         id="television"
-        className="grid gap-5 xs:p-3 sm:p-3 md:p-5 px-28 py-10 bg-gray-900"
+        className="grid xs:gap-1 gap-5 xs:p-3 sm:p-3 md:p-5 px-28 py-10 bg-gray-900"
       >
         <label className="font-bold xs:text-xl sm:text-4xl md:text-5xl text-6xl text-white">
           TV TOP RATED

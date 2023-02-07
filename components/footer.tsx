@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-      <section className="grid gap-3 bg-black text-white xs:p-3 px-28 p-10">
-        <div className="xs:w-24 w-32 mx-auto">
+      <section className="grid bg-black text-white xs:p-3 px-28 p-10">
+        <div className="xs:w-20 w-32 mx-auto">
           <img src="../moviedb-logo.png" className="w-full" />
         </div>
 
@@ -13,7 +13,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <label className="">ersavanfarhan</label>
+            <label className="xs:text-xs">ersavanfarhan</label>
           </div>
 
           <div>

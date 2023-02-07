@@ -40,17 +40,17 @@ export default function AnimeAllPopular() {
               <Link
                 href={"/anime/detail/" + animeAllPopular.animeId}
                 key={index}
-                className="mb-3 bg-gray-700 rounded-2xl text-white hover:scale-110 hover:transition"
+                className="bg-gray-700 rounded-2xl text-white lg:hover:scale-110 xl:hover:scale-110 hover:transition"
               >
                 <img
                   src={animeAllPopular.animeImg}
                   className="w-full aspect-[3/4] rounded-t-2xl"
                 />
                 <div id="poster_text" className="grid mt-2 px-3 pb-2">
-                  <label className="text-md font-bold">
+                  <label className="xs:text-xs text-sm font-bold">
                     {animeAllPopular.animeTitle}
                   </label>
-                  <label className="text-md font-bold">
+                  <label className="xs:text-xs text-sm font-bold">
                     {animeAllPopular.releasedDate}
                   </label>
                 </div>
